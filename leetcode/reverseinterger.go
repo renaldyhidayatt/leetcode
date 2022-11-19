@@ -19,6 +19,6 @@ func reverse(x int) int {
 	return res
 }
 
-func main() {
+func ReverseGOlang() {
 	print(reverse(123))
 }

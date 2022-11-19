@@ -13,6 +13,6 @@ func trailingZeroes(n int) int {
 	return count
 }
 
-func main() {
+func trailingZeroesMain() {
 	fmt.Println(trailingZeroes(3))
 }

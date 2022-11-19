@@ -21,7 +21,7 @@ func fizzBuzz(n int) []string {
 	return result
 }
 
-func main() {
+func fizz() {
 
 	fmt.Println(fizzBuzz(100))
 }

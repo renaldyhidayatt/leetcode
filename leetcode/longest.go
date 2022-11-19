@@ -22,7 +22,7 @@ func longgesCommon(strs []string) string {
 	return prefix
 }
 
-func main() {
+func loggest() {
 	flower := []string{"flower", "flow", "flight"}
 	fmt.Println(longgesCommon(flower))
 }

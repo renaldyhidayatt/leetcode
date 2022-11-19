@@ -27,6 +27,6 @@ func myPow(x float64, n int) float64 {
 	return ans
 }
 
-func main() {
+func powGolang() {
 	fmt.Println(myPow(2.00000, 10))
 }

@@ -17,6 +17,6 @@ func isPalingdrome(x int) bool {
 	return x == revertedNumber || x == revertedNumber/10
 }
 
-func main() {
+func palingDrome() {
 	fmt.Println(isPalingdrome(121))
 }

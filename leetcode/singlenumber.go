@@ -11,6 +11,6 @@ func Solution(num []int) int {
 	return value
 }
 
-func main() {
+func SingleNumber() {
 	fmt.Println(Solution([]int{4, 1, 2, 1, 2}))
 }
