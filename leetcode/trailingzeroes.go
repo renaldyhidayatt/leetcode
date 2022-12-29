@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func trailingZeroes(n int) int {
+func TrailingZeroes(n int) int {
 	count := 0
 
 	for n > 4 {
@@ -13,6 +13,6 @@ func trailingZeroes(n int) int {
 	return count
 }
 
-func trailingZeroesMain() {
-	fmt.Println(trailingZeroes(3))
+func TrailingZeroesMain() {
+	fmt.Println(TrailingZeroes(3))
 }

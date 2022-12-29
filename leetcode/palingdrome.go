@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func isPalingdrome(x int) bool {
+func IsPalingdrome(x int) bool {
 	if x < 0 || x%10 == 0 && x != 0 {
 		return false
 	}
@@ -17,6 +17,6 @@ func isPalingdrome(x int) bool {
 	return x == revertedNumber || x == revertedNumber/10
 }
 
-func palingDrome() {
-	fmt.Println(isPalingdrome(121))
+func PalingDrome() {
+	fmt.Println(IsPalingdrome(121))
 }

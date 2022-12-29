@@ -1,5 +1,5 @@
 package main
 
 func main() {
-	loggest()
+	AddTwoNumber(&ListNode{}, &ListNode{})
 }

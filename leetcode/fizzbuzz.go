@@ -5,7 +5,7 @@ import (
 	"strconv"
 )
 
-func fizzBuzz(n int) []string {
+func FizzBuzz(n int) []string {
 	var result []string
 	for i := 1; i <= n; i++ {
 		if i%3 == 0 && i%5 == 0 {
@@ -21,7 +21,7 @@ func fizzBuzz(n int) []string {
 	return result
 }
 
-func fizz() {
+func Fizz() {
 
-	fmt.Println(fizzBuzz(100))
+	fmt.Println(FizzBuzz(100))
 }

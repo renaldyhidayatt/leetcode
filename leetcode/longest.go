@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-func longgesCommon(strs []string) string {
+func LonggesCommon(strs []string) string {
 	if len(strs) == 0 {
 		return ""
 	}
@@ -22,9 +22,9 @@ func longgesCommon(strs []string) string {
 	return prefix
 }
 
-func loggest() {
+func Loggest() {
 	flower := []string{"flower", "flow", "flight"}
-	fmt.Println(longgesCommon(flower))
+	fmt.Println(LonggesCommon(flower))
 }
 
 /*

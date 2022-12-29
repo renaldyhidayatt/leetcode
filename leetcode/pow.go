@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func myPow(x float64, n int) float64 {
+func MyPow(x float64, n int) float64 {
 	ans := 1.0
 	num := n
 
@@ -27,6 +27,6 @@ func myPow(x float64, n int) float64 {
 	return ans
 }
 
-func powGolang() {
-	fmt.Println(myPow(2.00000, 10))
+func PowGolang() {
+	fmt.Println(MyPow(2.00000, 10))
 }
