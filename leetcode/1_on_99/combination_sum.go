@@ -2,23 +2,25 @@ package on99
 
 import "sort"
 
-func combinationSum(candidates []int, target int) [][]int {
+func combinationSum[T int | int32 | int64](candidates []T, target T) [][]T {
 	if len(candidates) == 0 {
-		return [][]int{}
+		return [][]T{}
 	}
-	c, res := []int{}, [][]int{}
 
-	sort.Ints(candidates)
+	c, res := []T{}, [][]T{}
 
-	findcombinationSum(candidates, target, 0, c, &res)
+	sort.Slice(candidates, func(i, j int) bool {
+		return candidates[i] < candidates[j]
+	})
+
+	findCombinationSum(candidates, target, 0, c, &res)
 	return res
-
 }
 
-func findcombinationSum(nums []int, target, index int, c []int, res *[][]int) {
+func findCombinationSum[T int | int32 | int64](nums []T, target T, index int, c []T, res *[][]T) {
 	if target <= 0 {
 		if target == 0 {
-			b := make([]int, len(c))
+			b := make([]T, len(c))
 			copy(b, c)
 
 			*res = append(*res, b)
@@ -27,15 +29,20 @@ func findcombinationSum(nums []int, target, index int, c []int, res *[][]int) {
 		return
 	}
 
+	if nums[index] > target {
+		return
+	}
+
 	for i := index; i < len(nums); i++ {
-		if nums[i] > target {
+
+		if target-nums[i] <= 0 {
 			break
 		}
 
 		c = append(c, nums[i])
 
-		findcombinationSum(nums, target-nums[i], i, c, res)
-		c = c[:len(c)-1]
+		findCombinationSum(nums, target-nums[i], i, c, res)
 
+		c = c[:len(c)-1]
 	}
 }
