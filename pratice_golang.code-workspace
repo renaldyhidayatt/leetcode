@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "algorithm"
+		},
+		{
+			"path": "basic"
+		},
+		{
+			"path": "design-patterns"
+		},
+		{
+			"path": "leetcode"
+		}
+	]
+}
