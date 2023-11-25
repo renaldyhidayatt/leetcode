@@ -11,3 +11,4 @@ func IsUgly(num int) bool {
 
 	return num == 1
 }
+
