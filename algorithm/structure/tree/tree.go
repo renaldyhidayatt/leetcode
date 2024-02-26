@@ -2,6 +2,7 @@ package tree
 
 import (
 	"algoritmAndDs/constraints"
+	"algoritmAndDs/math/max"
 )
 
 type Node[T constraints.Ordered] interface {
